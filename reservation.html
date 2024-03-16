@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+        <a href="index.html"><span>A-A TRAVEL</span> </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="#">DESTINATIONS </a> 
+            </li>
+            <li><a href="reservation.html">CONTACTS </a></li>
+
+         </ul>
+     </nav>
+
+</div>
+    <section id="reservation">
+        <h1>Bienvenue sur notre section de réservation  voyage !</h1>
+        <div class="inf">
+          <div class="acnl">
+            <h3>EMBARQUER POUR L'AVENTURE DE VOS REVES</h3>
+             <p> Préparez-vous à vivre une aventure sur mesure !</p>
+             <p>Partagez-nous vos envies, vos passions et vos attentes, et laissez-nous faire le reste pour vous offrir une expérience inoubliable !</p> 
+             <p> Votre voyage commence ici, à partager vos rêves avec nous</p> 
+             <p>Remplissez notre formulaire pour que nous puissions créer le voyage de vos rêves.</p>
+    
+          </div>
+          <div class="cnl">
+            <h4>RENSEIGNEZ  VOS INFORMATIONS</h4>
+             <form action="">
+                <div class="droit-gauche">
+                  <div class="droite">
+              
+                    <label for="">Nom complet:</label>
+                    <input type="text" required placeholder="Entrez votre nom et votre premon">
+                    <label for="">Adresse E-mail:</label>
+                    <input type="email"  name="mail" id="mail">
+                    <label for="pays">Destination souhaitée:</label>
+                    <select name="ville" id="ville">
+                        <option value="BANGKOK">BANGKOK</option>
+                        <option value="ROME">ROME</option>
+                        <option value="NEW-YORK">NEW-YORK</option>
+                        <option value="LONDRE">LONDRE</option>
+                        <option value="POYNESIE FRANCAISE">POYNESIE FRANCAISE</option>
+                        <option value="RIO">RIO</option>
+                    </select>
+                    <label for="">Dates de voyage prevues:</label>
+                    <input type="date"  name="date" id="date">
+                    <label for="">Nombre de personnes voyageant:</label>
+                    <input type="numero" >
+                    <label for="">Votre budjet $:</label>
+                    <input type="numero" >
+    
+                  </div>
+                  <div class="gauche">
+                    
+                    <label for="">Besoin particuliers:</label>
+                    <input type="text">
+                    <label for="">Interet touristique:</label>
+                    <input type="text" >
+                    <label for="paiement">Mode de paiement:</label>
+                    <select name="paiement" id="paiement">
+                        <option value="cartecredit">Carte credit</option>
+                        <option value="virement">Virement banquaire</option>
+                        <option value="paiementmobile">Paiement Mobile</option>
+                        <option value="paypal">PAYPAL</option>
+                    </select>
+                    <label for="paiement">Preference Activites:</label>
+                    <input type="text" required placeholder="Entrez vos activités preferés">
+                  
+                    <input type="submit" value="Soumettre">
+                  </div>
+                </div>
+             </form>
+          </div>
+        </div>  
+       </section>
+      
+       <script>
+        ScrollReveal({
+            reset:true,
+            distance:'60px',
+            duration:2500,
+            delay:400
+        });
+        ScrollReveal().reveal('#reservation, h1', {delay:500, origin:'left'});
+        ScrollReveal().reveal('.acnl',{delay:700, origin:'right'});
+        ScrollReveal().reveal('.cnl',{delay:500, origin:'left',interval:200});
+
+    
+       </script>
+
+
+</body>
+</html>
